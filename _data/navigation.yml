@@ -1,0 +1,34 @@
+# main links
+main:
+  - title: Wiki
+    url: /wiki/
+  - title: Issues
+    url: https://github.com/3RD-Dimension/3RDD-GCode-Sender-Issues/issues
+  - title: Releases
+    url: https://github.com/3RD-Dimension/3RDD-GCode-Sender-Issues/releases/latest
+  - title: About
+    url: /about/
+
+wiki:
+  - title: Get Familiar
+    children:
+      - title: "Home"
+        url: /wiki/
+      - title: "Edit Panel"
+        url: /editpanel/
+      - title: "File Panel"
+        url: /filepanel/
+      - title: "Machine Panel"
+        url: /machinepanel/
+      - title: "Machine Status Bar"
+        url: /machinestatus/
+      - title: "Macro Panel"
+        url: /macrospanel/
+      - title: "Manual Panel"
+        url: /manualpanel/
+      - title: "Overrides Panel"
+        url: /overridespanel/
+      - title: "Probing Panel"
+        url: /probingpanel/
+      - title: "Settings"
+        url: /settings/
