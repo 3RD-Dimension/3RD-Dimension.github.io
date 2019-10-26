@@ -68,7 +68,7 @@ This tab contains various options in relation to GCode, for the Sender and for t
 ![](/images/wiki/3rdd_settings_hotkey.png){: .align-center}
 {:style="clear: center"}
 
-The Hotkeys tab is where you can set Hotkeys for various commands.  Some hotkeys only work in certain states of the machine which will be noted.  **To set a key** click into a box that you which to change, pressed the required Key(s) (the box will turn orange to signal hotkey has been changed but not saved), then double click the box again.  The box will return to white and your hotkey is now saved.  When the settings window is then closed, your new hotkeys are then re-loaded and are available.
+The Hotkeys tab is where you can set Hotkeys for various commands.  Some hotkeys only work in certain states of the machine which will be noted.  **To set a key** Press the required key conbination into the fucntion you choose and it is set.  When you close the settings your hotkeys will be available.  To clear a hot key, double click with your mouse on the hoykey.
 
 **Current Configurable Hotkeys**
 * Jog X Axis + (Default: Right) - Only available if currently not sending a file and Jogging Keyboard Focused
