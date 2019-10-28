@@ -12,9 +12,9 @@ header:
 
 ![3RDD GCode Sender Main Screen](/images/wiki/3rddgcs_main.png)
 
-3RDD GCode Sender is another GRBL streaming program (similar to UGS, bCNC etc) derived and highely continously modified from OpenCNCPilot (more PCB placed) to more towards to general CNC routing and is continously being developed with new and improved features.
+3RDD GCode Sender is another GRBL streaming program (similar to UGS, bCNC etc) derived and highly continously modified from OpenCNCPilot (more PCB placed) to more towards to general CNC routing and is continously being developed with new and improved features.
 
-Some of the current enchancements include configurable hotkeys, customizable colors for the 3D workspace (Rapids, Lines and Arcs), Jogging buttons, Autoupdater, Export GRBL settings to a formatted file.
+Some of the current enhancements include configurable hotkeys, customizable colors for the 3D workspace (Rapids, Lines and Arcs), Jogging buttons, Autoupdater, and Export GRBL settings to a formatted file and other cnc routing tweaks and functions.
 
 To get an over-view of what the program currently has, click on the Wiki link at the top and have a look through each section.  Any features or bugs that you encounter please use our issue link to github above and let us know.
 

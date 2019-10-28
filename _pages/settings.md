@@ -32,6 +32,9 @@ This is where you can change various options of the job display.
 * Height Map Opacity (Currently not used and will be removed in future versions).
 * Grid Thickness (default 0.1).
 * Preview Toolpath.
+* Customize color of Toolpath Rapid lines.
+* Customize color of Toolpath lines.
+* Customize color of Toolpath Arc lines
 
 ## Probing Tab
 
@@ -43,7 +46,7 @@ Here you will find settings relevent to the probing button found on the [Probing
 * Abort and Single on Probe Fail - If checked, an error will be displayed if probe cycle exceeded Max Probe Distance.
 * Safe Retract Height (mm) - The amount Z will raise by after a successfull probing.
 * Max Probe Distance (mm) - How far Z will lower to find yuor touch plate and if exceeds will abort.
-* Probe Thickeness (mm) - Thickness of our probe/touch plate which will be used to set tool zero.
+* Probe Thickeness (mm) - Thickness of your probe/touch plate.
 
 ## GCode Tab
 
@@ -57,10 +60,6 @@ This tab contains various options in relation to GCode, for the Sender and for t
 * Warning Window on File Load - If checked, information on what is being ignored when a file is loaded will be displayed.  **Note** any ingnored commands are only relevent to the displaying of the file, ingnored commands are still sent to the controller.
 * FeedRate Inc/Dec - If checked feed rate will be increased or decreased by 10 each time (if using Hotkey).
 * Spindle Inc/Dec - If checked Spindle will be increased or decreased by 10 each time (if using Hotkey).
-* Zero All Command - Customise your Zero All Command sent to controller.
-* Zero X Command - Customise your Zero X Command sent to controller.
-* Zero Y Command - Customise your Zero Y Command sent to controller.
-* Zero Z Command - Customise your Zero Z Command sent to controller.
 
 ## HotKey Tab 
 **Added in Version 2.0.1.1**
