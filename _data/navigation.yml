@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: QuickStart
+    url: /quickstart/
   - title: Wiki
     url: /wiki/
   - title: Issues
