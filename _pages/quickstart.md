@@ -22,7 +22,7 @@ There are only a couple of requirments needed to run 3RDD GCode Sender
 
 ## Step 2 - Start the program
 When you have extracted to a folder, locate the directory and double-click on **3RDD GCode Sender.exe** and you will be presented with the following.
-![Step 2](/images/quickstart/step2.png)
+![Step 2](/images/quickstart/Step2.png)
 
 ## Step 3 - Configure to connect to GRBL
 1. Locate the **Machine** panel on the top-right of the window and click on it - it will expand revealing more options.
@@ -35,7 +35,7 @@ When you have extracted to a folder, locate the directory and double-click on **
 
 ## Step 4 - Connect to your Controller
 Once you have made the required changes above, you can now connect to your controller.  To do this - in the Machine panel click on **Connect** and you should see the initialization from your controller at the bottom right.
-![Step 2](/images/quickstart/step4.png)
+![Step 2](/images/quickstart/Step4.png)
 
 From this point on, all controller and machine options will now become available - you can now jog your machine, load a GCode file, run a file as well as change GRBL controller settings straight from the program.
 
