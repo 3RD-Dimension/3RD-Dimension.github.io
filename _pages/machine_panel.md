@@ -50,11 +50,12 @@ Here is an example of the exported file
 
 ## $100, $101, $102 FineTune Calculator
 **Implemented in version 2.0.1.3**
+![](/images/wiki/3rddgcs_grblSettings_calc2.png){: .align-center}
 
 A calculator for fine tuning the steps of your stepper motors has been added.  Sometimes when doing the normal calculation of `steps_per_mm = (steps_per_revolution*microsteps)/mm_per_rev` can result to your steps being out just a little and so makes your moves also slightly out - resulting in either slightly smaller or slightly bigger parts.  This can be as much as 0.03mm per 1mm, and added up along say a 100mm piece can be out as much as 0.3mm.
 
 **Basic overview on how to use:**
-![](/images/wiki/3rddgcs_grblSettings_calc2.png){: .align-center}
+
 1 Set your initial steps using the calculation mentioned above - for a 200 step stepper, with x16 microstep and 8mm lead screw the calculation would be `steps_per_mm = (200 * 16) / 8` = 400 Steps per mm.  Enter this into the required setting ($100, $101, $102).
 1 Zero the machine and mark where the point is - some tape on the spoil board for example.
 1 In 3RDD GCode Sender - command the machine to jog 50mm to 100mm, when it stops mark that point.
