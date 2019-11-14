@@ -40,10 +40,30 @@ Clicking on the Work Offsets button will display the above screen.  This is wher
 
 At the top of this window the current version of your GRBL controller is displayed as well as any options associated with it.
 
-Below this is all the current settings on the controller which you can change and then save by clicking on "Apply" - the new settings will be saved to the Eeprom.  If you dont know what each setting does, a short description is also shown.
+Below this is all the current settings on the controller which you can change and then save by clicking on **Apply**- the new settings will be saved to the Eeprom.  If you dont know what each setting does, a short description is also shown.
 
-There is also an "Export" button where you can export the currently displayed settings to a text file in an easy-to-read format.  Very usefull for backing up the settings for future use or testing.
+There is also an **Export** button where you can export the currently displayed settings to a text file in an easy-to-read format.  Very usefull for backing up the settings for future use or testing.
 
 Here is an example of the exported file
 ![](/images/wiki/3rddgcs_machine_grbl_export_sample.png){: .align-center}
 {:style="clear: center"}
+
+## $100, $101, $102 FineTune Calculator
+**Implemented in version 2.0.1.3**
+
+A calculator for fine tuning the steps of your stepper motors has been added.  Sometimes when doing the normal calculation of `steps_per_mm = (steps_per_revolution*microsteps)/mm_per_rev` can result to your steps being out just a little and so makes your moves also slightly out - resulting in either slightly smaller or slightly bigger parts.  This can be as much as 0.03mm per 1mm, and added up along say a 100mm piece can be out as much as 0.3mm.
+
+**Basic overview on how to use:**
+![](/images/wiki/3rddgcs_grblSettings_calc2.png){: .align-center}
+1 Set your initial steps using the calculation mentioned above - for a 200 step stepper, with x16 microstep and 8mm lead screw the calculation would be `steps_per_mm = (200 * 16) / 8` = 400 Steps per mm.  Enter this into the required setting ($100, $101, $102).
+1 Zero the machine and mark where the point is - some tape on the spoil board for example.
+1 In 3RDD GCode Sender - command the machine to jog 50mm to 100mm, when it stops mark that point.
+1 Grab a tape measure and measure from the start point (where your Zero of axis is) to the end point (where the jog has stopped).
+1 Open the Calculator Pop-up by double-clicking on the text box for $100, $101, or $102.
+1 Enter the distance that you command in the relevent box, and the distance actually travelled in the next box.  The calcualtion of the new steps will be shown.
+1 To use the new value, click on **Apply** and it will replace the previous setting.  Do the same for any other axis.
+1 When values have been calculated and changed, click on Apply at the bottom to update the firmware with the new settings.
+1 Test and Repeat. 
+
+**Suppliment**
+To really dial in and measure below 0.5mm, use a dial guage and jog 1mm and use that value in the calculator, reset then jog 1mm again and repeat until you are close to the commanded value.  You can use a different jog value (say 5mm) as long as it is within the specifications of your dial gauge.
