@@ -56,15 +56,15 @@ A calculator for fine tuning the steps of your stepper motors has been added.  S
 
 **Basic overview on how to use:**
 
-1 Set your initial steps using the calculation mentioned above - for a 200 step stepper, with x16 microstep and 8mm lead screw the calculation would be `steps_per_mm = (200 * 16) / 8` = 400 Steps per mm.  Enter this into the required setting ($100, $101, $102).
-1 Zero the machine and mark where the point is - some tape on the spoil board for example.
-1 In 3RDD GCode Sender - command the machine to jog 50mm to 100mm, when it stops mark that point.
-1 Grab a tape measure and measure from the start point (where your Zero of axis is) to the end point (where the jog has stopped).
-1 Open the Calculator Pop-up by double-clicking on the text box for $100, $101, or $102.
-1 Enter the distance that you command in the relevent box, and the distance actually travelled in the next box.  The calcualtion of the new steps will be shown.
-1 To use the new value, click on **Apply** and it will replace the previous setting.  Do the same for any other axis.
-1 When values have been calculated and changed, click on Apply at the bottom to update the firmware with the new settings.
-1 Test and Repeat. 
+1. Set your initial steps using the calculation mentioned above - for a 200 step stepper, with x16 microstep and 8mm lead screw the calculation would be `steps_per_mm = (200 * 16) / 8` = 400 Steps per mm.  Enter this into the required setting ($100, $101, $102).
+1. Zero the machine and mark where the point is - some tape on the spoil board for example.
+1. In 3RDD GCode Sender - command the machine to jog 50mm to 100mm, when it stops mark that point.
+1. Grab a tape measure and measure from the start point (where your Zero of axis is) to the end point (where the jog has stopped).
+1. Open the Calculator Pop-up by double-clicking on the text box for $100, $101, or $102.
+1. Enter the distance that you command in the relevent box, and the distance actually travelled in the next box.  The calcualtion of the new steps will be shown.
+1. To use the new value, click on **Apply** and it will replace the previous setting.  Do the same for any other axis.
+1. When values have been calculated and changed, click on Apply at the bottom to update the firmware with the new settings.
+1. Test and Repeat. 
 
 **Suppliment**
 To really dial in and measure below 0.5mm, use a dial guage and jog 1mm and use that value in the calculator, reset then jog 1mm again and repeat until you are close to the commanded value.  You can use a different jog value (say 5mm) as long as it is within the specifications of your dial gauge.
