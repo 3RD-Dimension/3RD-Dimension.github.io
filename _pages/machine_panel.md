@@ -67,4 +67,5 @@ A calculator for fine tuning the steps of your stepper motors has been added.  S
 1. Test and Repeat. 
 
 **Suppliment**
+
 To really dial in and measure below 0.5mm, use a dial guage and jog 1mm and use that value in the calculator, reset then jog 1mm again and repeat until you are close to the commanded value.  You can use a different jog value (say 5mm) as long as it is within the specifications of your dial gauge.
